@@ -30,19 +30,25 @@
        
        // Creating a Layer object
        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+      /* L.geoJSON(places,{
+        onEachFeature: function(feature, layer) {
+            layer.bindPopup("<span>айди: " + feature.properties.id +"</span>");
+        }
+
+        }).addTo(map);*/
        var marker = L.marker([54.697851, 20.509628]).addTo(map).bindPopup("<strong>Кирха Святого семейства</strong><br />Адрес: ул. Богдана Хмельницкого, 61А");
        var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
        var marker = L.marker([54.695403, 20.521671]).addTo(map).bindPopup("<strong>Фридландские ворота</strong><br />Адрес: ул. Дзержинского, 30");
        var marker = L.marker([54.705080, 20.507244]).addTo(map).bindPopup("<strong>Калининградский областной музей изобразительных искусств</strong><br />Адрес: Ленинский просп., 83");
        var marker = L.marker([54.714756, 20.459163]).addTo(map).bindPopup("<strong>107 автобус в Балтийск</strong><br />Адрес: ул. Фридриха Энгельса, 1");
        var marker = L.marker([54.733984, 20.48480]).addTo(map).bindPopup("<strong>120 автобус в Янтарный</strong><br />Адрес: Советский проспект, 84-90");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.706438, 20.511817]).addTo(map).bindPopup("<strong>Музей имени И. Канта</strong><br />Адрес: ул. Канта, 1");
+       var marker = L.marker([54.702424, 20.514482]).addTo(map).bindPopup("<strong>Юбилейный мост</strong><br />Адрес: Октябрьская ул., 8");
+       var marker = L.marker([54.705694, 20.522606]).addTo(map).bindPopup("<strong>Собор Воздвижения Честного Креста Господня</strong><br />Адрес: ул. Генерала Павлова, 2");
+       var marker = L.marker([54.709595, 20.538128]).addTo(map).bindPopup("<strong>Закхаймские ворота</strong><br />Адрес: ул. Литовский Вал, 61");
+       var marker = L.marker([54.717163, 20.531948]).addTo(map).bindPopup("<strong>Оборонительная казарма Кронпринц</strong><br />Адрес: ул. Литовский Вал, 38");
+       var marker = L.marker([54.717672, 20.533412]).addTo(map).bindPopup("<strong>Редюит бастиона Грольман</strong><br />Адрес: ул. Литовский Вал, 21");
+       var marker = L.marker([54.710412, 20.507747]).addTo(map).bindPopup("<strong>Кёнигсбергский замок</strong><br />Адрес: ул. Шевченко, 2");
        var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
        var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
        var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
