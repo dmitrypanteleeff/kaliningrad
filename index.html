@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калининград</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="leaflet/path/to/leaflet.css" />
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="leaflet/path/to/leaflet.js"></script>
+</head>
+<body>
+    <div id = "map" ></div>
+    <script>
+       // Creating map options
+       var mapOptions = {
+          center: [54.710454, 20.512733],
+          zoom: 12
+       }
+       
+       // Creating a map object
+       var map = new L.map('map', mapOptions);
+       
+       // Creating a Layer object
+       var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+       var marker = L.marker([54.697851, 20.509628]).addTo(map).bindPopup("<strong>Кирха Святого семейства</strong><br />Адрес: ул. Богдана Хмельницкого, 61А");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.695403, 20.521671]).addTo(map).bindPopup("<strong>Фридландские ворота</strong><br />Адрес: ул. Дзержинского, 30");
+       var marker = L.marker([54.705080, 20.507244]).addTo(map).bindPopup("<strong>Калининградский областной музей изобразительных искусств</strong><br />Адрес: Ленинский просп., 83");
+       var marker = L.marker([54.714756, 20.459163]).addTo(map).bindPopup("<strong>107 автобус в Балтийск</strong><br />Адрес: ул. Фридриха Энгельса, 1");
+       var marker = L.marker([54.733984, 20.48480]).addTo(map).bindPopup("<strong>120 автобус в Янтарный</strong><br />Адрес: Советский проспект, 84-90");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       
+       map.addLayer(layer);
+       /*var myLayer = L.geoJSON().addTo(map);
+        myLayer.addData(geojsonFeature);*/
+       		
+       
+
+    </script>
+</body>
+</html>
