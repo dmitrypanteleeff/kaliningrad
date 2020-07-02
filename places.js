@@ -9,7 +9,7 @@ var places = {
               }
       } }
  ,
-  
+  { "type":"Feature",
      "geometry":{          "type":"Point",
          "coordinates":[54.70391,20.515689],
           "properties": {               "id":"2",

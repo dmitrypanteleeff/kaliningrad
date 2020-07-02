@@ -18,11 +18,12 @@
 </head>
 <body>
     <div id = "map" ></div>
+    <script src="sample-geojson.js" type="text/javascript"></script>
     <script>
        // Creating map options
        var mapOptions = {
           center: [54.710454, 20.512733],
-          zoom: 12
+          zoom: 13
        }
        
        // Creating a map object
@@ -30,11 +31,13 @@
        
        // Creating a Layer object
        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+       map.addLayer(layer);
+      
       /* L.geoJSON(places,{
         onEachFeature: function(feature, layer) {
             layer.bindPopup("<span>айди: " + feature.properties.id +"</span>");
         }
-
+        
         }).addTo(map);*/
        var marker = L.marker([54.697851, 20.509628]).addTo(map).bindPopup("<strong>Кирха Святого семейства</strong><br />Адрес: ул. Богдана Хмельницкого, 61А");
        var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
@@ -49,15 +52,32 @@
        var marker = L.marker([54.717163, 20.531948]).addTo(map).bindPopup("<strong>Оборонительная казарма Кронпринц</strong><br />Адрес: ул. Литовский Вал, 38");
        var marker = L.marker([54.717672, 20.533412]).addTo(map).bindPopup("<strong>Редюит бастиона Грольман</strong><br />Адрес: ул. Литовский Вал, 21");
        var marker = L.marker([54.710412, 20.507747]).addTo(map).bindPopup("<strong>Кёнигсбергский замок</strong><br />Адрес: ул. Шевченко, 2");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
-       var marker = L.marker([54.703910, 20.515689]).addTo(map).bindPopup("<strong>квартал Рыбная Деревня</strong><br />Адрес: ул. Октябрьская улица, 6");
+       var marker = L.marker([54.713808, 20.518222]).addTo(map).bindPopup("<strong>Калининградский областной историко-художественный музей</strong><br />Адрес: Клиническая ул., 21");
+       var marker = L.marker([54.713286, 20.50973]).addTo(map).bindPopup("<strong>Блиндаж-бункер Отто Ляша</strong><br />Адрес: Университетская ул., 2А");
+       var marker = L.marker([54.706630, 20.500507]).addTo(map).bindPopup("<strong>Музей Мирового океана</strong><br />Адрес: набережная Петра Великого, 1");
+       var marker = L.marker([54.706076, 20.499729]).addTo(map).bindPopup("<strong>Научно-исследовательское судно Витязь</strong><br />Адрес: наб. Петра Великого, 1");
+       var marker = L.marker([54.704472, 20.493356]).addTo(map).bindPopup("<strong>Фридрихсбургские ворота</strong><br />Адрес: Портовая улица, 39");
+       var marker = L.marker([54.6972, 20.494589]).addTo(map).bindPopup("<strong>Бранденбургские ворот</strong><br />Адрес: ул. Багратиона, 137");
+       var marker = L.marker([54.687920, 20.491712]).addTo(map).bindPopup("<strong>Музей истории Калининградской железной дороги</strong><br />Адрес: Киевская ул., 22Б");
+      
+        
+     
+	
+
+
+// The function to create marker on click
+/*var onMapClick = function (e) {
+    var marqueur = L.marker([e.latlng.lat, e.latlng.lng], {
+                icon        : L.ExtraMarkers.icon({
+                icon        : 'fa-number',
+                prefix      : 'fa',
+                markerColor : red,
+                number      : 0
+            })
+        }).addTo(map).bindPopup(e.latlng.lat + ' ' + e.latlng.lng);
+};
+
        
-       map.addLayer(layer);
        /*var myLayer = L.geoJSON().addTo(map);
         myLayer.addData(geojsonFeature);*/
        		
